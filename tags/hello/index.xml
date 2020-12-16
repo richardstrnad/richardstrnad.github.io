@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello on Richard Strnad</title>
+    <link>https://richardstrnad.github.io/tags/hello/</link>
+    <description>Recent content in Hello on Richard Strnad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://richardstrnad.github.io/tags/hello/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://richardstrnad.github.io/posts/2020/12/01/hello-world/</link>
+      <pubDate>Tue, 01 Dec 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://richardstrnad.github.io/posts/2020/12/01/hello-world/</guid>
+      <description>Welcome to my new Page! After years on a wordpress based blog, it&amp;rsquo;s time for something new.
+  That&amp;rsquo;s me!
+  def HelloWorld(): return &amp;#34;Welcome to the Blog!&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>
