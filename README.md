@@ -1,0 +1,1 @@
+# richardstrnad.github.io
