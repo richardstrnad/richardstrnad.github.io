@@ -5,18 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Richard Strnad ">
-<meta name="description" content="Welcome to my new Page! After years on a wordpress based blog, it&amp;rsquo;s time for something new.
-  That&amp;rsquo;s me!
-  def HelloWorld(): return &amp;#34;Welcome to the Blog!&amp;#34; " />
-<meta name="keywords" content=", Hello, World" />
+<meta name="description" content="To have a CICD pipeline for my github pages site, i use the following travis config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis project.
+---install:- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb- sudo dpkg -i hugo*.debscript:- hugodeploy:- provider:pageslocal_dir:publicrepo:richardstrnad/richardstrnad.github.iotarget_branch:masterskip_cleanup:truegithub_token:$GITHUB_AUTH_SECRETkeep_history:trueon:branch:masterenv:global:- HUGO_RELEASE=0." />
+<meta name="keywords" content=", github, pages, cicd, travis" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#471001" />
-<link rel="canonical" href="https://richardstrnad.github.io/posts/2020/12/01/hello-world/" />
+<link rel="canonical" href="https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/" />
 
 
     <title>
         
-            Hello World :: Richard Strnad 
+            Automate GitHub Pages with Travis CI :: Richard Strnad 
         
     </title>
 
@@ -34,23 +33,21 @@
 
 
 
-<meta itemprop="name" content="Hello World">
-<meta itemprop="description" content="Welcome to my new Page! After years on a wordpress based blog, it&rsquo;s time for something new.
-  That&rsquo;s me!
-  def HelloWorld(): return &#34;Welcome to the Blog!&#34; ">
-<meta itemprop="datePublished" content="2020-12-01T12:00:00+01:00" />
-<meta itemprop="dateModified" content="2020-12-01T12:00:00+01:00" />
-<meta itemprop="wordCount" content="26">
+<meta itemprop="name" content="Automate GitHub Pages with Travis CI">
+<meta itemprop="description" content="To have a CICD pipeline for my github pages site, i use the following travis config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis project.
+---install:- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb- sudo dpkg -i hugo*.debscript:- hugodeploy:- provider:pageslocal_dir:publicrepo:richardstrnad/richardstrnad.github.iotarget_branch:masterskip_cleanup:truegithub_token:$GITHUB_AUTH_SECRETkeep_history:trueon:branch:masterenv:global:- HUGO_RELEASE=0.">
+<meta itemprop="datePublished" content="2020-12-27T21:30:39+01:00" />
+<meta itemprop="dateModified" content="2020-12-27T21:30:39+01:00" />
+<meta itemprop="wordCount" content="39">
 
 
 
-<meta itemprop="keywords" content="Hello,World," />
+<meta itemprop="keywords" content="github,pages,cicd,travis," />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hello World"/>
-<meta name="twitter:description" content="Welcome to my new Page! After years on a wordpress based blog, it&rsquo;s time for something new.
-  That&rsquo;s me!
-  def HelloWorld(): return &#34;Welcome to the Blog!&#34; "/>
+<meta name="twitter:title" content="Automate GitHub Pages with Travis CI"/>
+<meta name="twitter:description" content="To have a CICD pipeline for my github pages site, i use the following travis config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis project.
+---install:- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb- sudo dpkg -i hugo*.debscript:- hugodeploy:- provider:pageslocal_dir:publicrepo:richardstrnad/richardstrnad.github.iotarget_branch:masterskip_cleanup:truegithub_token:$GITHUB_AUTH_SECRETkeep_history:trueon:branch:masterenv:global:- HUGO_RELEASE=0."/>
 
 
 
@@ -58,7 +55,7 @@
 
 
 
-    <meta property="article:published_time" content="2020-12-01 12:00:00 &#43;0100 &#43;0100" />
+    <meta property="article:published_time" content="2020-12-27 21:30:39 &#43;0100 &#43;0100" />
 
 
 
@@ -132,24 +129,38 @@
 
     <article>
       <h1 class="post-title">
-        <a href="https://richardstrnad.github.io/posts/2020/12/01/hello-world/">Hello World</a>
+        <a href="https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/">Automate GitHub Pages with Travis CI</a>
       </h1>
 
       
 
       <div class="post-content">
-        <p>Welcome to my new Page! After years on a wordpress based blog, it&rsquo;s time for
-something new.</p>
-<figure>
-    <img src="/img/logo.jpg"
-         alt="That&amp;rsquo;s me!" height="250px"/> <figcaption>
-            <p>That&rsquo;s me!</p>
-        </figcaption>
-</figure>
-
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">HelloWorld</span>():
-  <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;Welcome to the Blog!&#34;</span>
-</code></pre></div>
+        <p>To have a CICD pipeline for my github pages site, i use the following travis
+config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis
+project.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#00f;font-weight:bold">---</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">install</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- sudo dpkg -i hugo*.deb<span style="color:#bbb">
+</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">script</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- hugo<span style="color:#bbb">
+</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">deploy</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- <span style="color:#008000;font-weight:bold">provider</span>:<span style="color:#bbb"> </span>pages<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">local_dir</span>:<span style="color:#bbb"> </span>public<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">repo</span>:<span style="color:#bbb"> </span>richardstrnad/richardstrnad.github.io<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">target_branch</span>:<span style="color:#bbb"> </span>master<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">skip_cleanup</span>:<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">true</span><span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">github_token</span>:<span style="color:#bbb"> </span>$GITHUB_AUTH_SECRET<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">keep_history</span>:<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">true</span><span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">on</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">      </span><span style="color:#008000;font-weight:bold">branch</span>:<span style="color:#bbb"> </span>master<span style="color:#bbb">
+</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">env</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span><span style="color:#008000;font-weight:bold">global</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">    </span>- HUGO_RELEASE=0.79.1<span style="color:#bbb">
+</span></code></pre></div>
       </div>
     </article>
 
@@ -160,8 +171,10 @@ something new.</p>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://richardstrnad.github.io/tags/hello/">Hello</a></span>
-        <span class="tag"><a href="https://richardstrnad.github.io/tags/world/">World</a></span>
+        <span class="tag"><a href="https://richardstrnad.github.io/tags/github/">github</a></span>
+        <span class="tag"><a href="https://richardstrnad.github.io/tags/pages/">pages</a></span>
+        <span class="tag"><a href="https://richardstrnad.github.io/tags/cicd/">cicd</a></span>
+        <span class="tag"><a href="https://richardstrnad.github.io/tags/travis/">travis</a></span>
         
     </p>
 
@@ -175,7 +188,7 @@ something new.</p>
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        26 Words
+        39 Words
       </p>
 
       <p>
@@ -186,7 +199,7 @@ something new.</p>
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2020-12-01 11:00
+          2020-12-27 20:30
         
 
          
@@ -204,14 +217,14 @@ something new.</p>
 
         <div class="pagination__buttons">
           
-            <span class="button previous">
-              <a href="https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/">
-                <span class="button__icon">←</span>
-                <span class="button__text">Automate GitHub Pages with Travis CI</span>
+
+          
+            <span class="button next">
+              <a href="https://richardstrnad.github.io/posts/2020/12/01/hello-world/">
+                <span class="button__text">Hello World</span>
+                <span class="button__icon">→</span>
               </a>
             </span>
-          
-
           
         </div>
       </div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pages on Richard Strnad</title>
+    <link>https://richardstrnad.github.io/tags/pages/</link>
+    <description>Recent content in pages on Richard Strnad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Dec 2020 21:30:39 +0100</lastBuildDate><atom:link href="https://richardstrnad.github.io/tags/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automate GitHub Pages with Travis CI</title>
+      <link>https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/</link>
+      <pubDate>Sun, 27 Dec 2020 21:30:39 +0100</pubDate>
+      
+      <guid>https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/</guid>
+      <description>To have a CICD pipeline for my github pages site, i use the following travis config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis project.
+---install:- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb- sudo dpkg -i hugo*.debscript:- hugodeploy:- provider:pageslocal_dir:publicrepo:richardstrnad/richardstrnad.github.iotarget_branch:masterskip_cleanup:truegithub_token:$GITHUB_AUTH_SECRETkeep_history:trueon:branch:masterenv:global:- HUGO_RELEASE=0.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,8 +5,44 @@
         <description>Recent content in Posts on Richard Strnad</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 01 Dec 2020 12:00:00 +0100</lastBuildDate>
+        <lastBuildDate>Sun, 27 Dec 2020 21:30:39 +0100</lastBuildDate>
         <atom:link href="https://richardstrnad.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Automate GitHub Pages with Travis CI</title>
+            <link>https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/</link>
+            <pubDate>Sun, 27 Dec 2020 21:30:39 +0100</pubDate>
+            
+            <guid>https://richardstrnad.github.io/posts/2020/12/27/automate-github-pages-with-travis-ci/</guid>
+            <description>To have a CICD pipeline for my github pages site, i use the following travis config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis project.
+---install:- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb- sudo dpkg -i hugo*.debscript:- hugodeploy:- provider:pageslocal_dir:publicrepo:richardstrnad/richardstrnad.github.iotarget_branch:masterskip_cleanup:truegithub_token:$GITHUB_AUTH_SECRETkeep_history:trueon:branch:masterenv:global:- HUGO_RELEASE=0.</description>
+            <content type="html"><![CDATA[<p>To have a CICD pipeline for my github pages site, i use the following travis
+config. GITHUB_AUTH_SECRET is set in the settings page of the respective travis
+project.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#00f;font-weight:bold">---</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">install</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- curl -LO https://github.com/gohugoio/hugo/releases/download/v${HUGO_RELEASE}/hugo_extended_${HUGO_RELEASE}_Linux-64bit.deb<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- sudo dpkg -i hugo*.deb<span style="color:#bbb">
+</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">script</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- hugo<span style="color:#bbb">
+</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">deploy</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>- <span style="color:#008000;font-weight:bold">provider</span>:<span style="color:#bbb"> </span>pages<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">local_dir</span>:<span style="color:#bbb"> </span>public<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">repo</span>:<span style="color:#bbb"> </span>richardstrnad/richardstrnad.github.io<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">target_branch</span>:<span style="color:#bbb"> </span>master<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">skip_cleanup</span>:<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">true</span><span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">github_token</span>:<span style="color:#bbb"> </span>$GITHUB_AUTH_SECRET<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">keep_history</span>:<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">true</span><span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#008000;font-weight:bold">on</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">      </span><span style="color:#008000;font-weight:bold">branch</span>:<span style="color:#bbb"> </span>master<span style="color:#bbb">
+</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#008000;font-weight:bold">env</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span><span style="color:#008000;font-weight:bold">global</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">    </span>- HUGO_RELEASE=0.79.1<span style="color:#bbb">
+</span></code></pre></div>]]></content>
+        </item>
         
         <item>
             <title>Hello World</title>
