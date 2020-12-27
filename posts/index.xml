@@ -5,7 +5,31 @@
         <description>Recent content in Posts on Richard Strnad</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
+        <lastBuildDate>Tue, 01 Dec 2020 12:00:00 +0100</lastBuildDate>
         <atom:link href="https://richardstrnad.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hello World</title>
+            <link>https://richardstrnad.github.io/posts/2020/12/01/hello-world/</link>
+            <pubDate>Tue, 01 Dec 2020 12:00:00 +0100</pubDate>
+            
+            <guid>https://richardstrnad.github.io/posts/2020/12/01/hello-world/</guid>
+            <description>Welcome to my new Page! After years on a wordpress based blog, it&amp;rsquo;s time for something new.
+  That&amp;rsquo;s me!
+  def HelloWorld(): return &amp;#34;Welcome to the Blog!&amp;#34; </description>
+            <content type="html"><![CDATA[<p>Welcome to my new Page! After years on a wordpress based blog, it&rsquo;s time for
+something new.</p>
+<figure>
+    <img src="/img/logo.jpg"
+         alt="That&amp;rsquo;s me!" height="250px"/> <figcaption>
+            <p>That&rsquo;s me!</p>
+        </figcaption>
+</figure>
+
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">HelloWorld</span>():
+  <span style="color:#008000;font-weight:bold">return</span> <span style="color:#ba2121">&#34;Welcome to the Blog!&#34;</span>
+</code></pre></div>]]></content>
+        </item>
         
     </channel>
 </rss>
