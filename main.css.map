@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/strnad/Documents/3_application/python/richardstrnad_new",
+	"sourceRoot": "/home/travis/build/richardstrnad/blog",
 	"sources": [
 		"themes/blog/assets/scss/main.scss",
 		"themes/blog/assets/scss/_normalize.scss",
