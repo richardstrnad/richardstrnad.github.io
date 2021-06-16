@@ -16,10 +16,19 @@
             <guid>https://richardstrnad.github.io/posts/2021/01/12/hello-from-my-mobile/</guid>
             <description>This is a test post created on my mobile with working copy.
 Hello again.
-Update 16.06.2021: Now from iaWriter 👍🏻</description>
+Update 16.06.2021: Now from iaWriter 👍🏻
+  Now with a Picture :)
+  </description>
             <content type="html"><![CDATA[<p>This is a test post created on my mobile with working copy.</p>
 <p>Hello again.</p>
 <p>Update 16.06.2021: Now from iaWriter 👍🏻</p>
+<figure>
+    <img src="/img/IMG_0686.heic"
+         alt="Now with a Picture :)" height="500px"/> <figcaption>
+            <p>Now with a Picture :)</p>
+        </figcaption>
+</figure>
+
 ]]></content>
         </item>
         
